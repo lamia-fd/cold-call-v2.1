@@ -8,24 +8,37 @@
 import UIKit
 
 class ViewController: UIViewController {
-var count=0
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var number: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    let names=["sara","nora","lamia","tmara","maha","wala"]
+    let names=["sara","nora","lamia","tmara","maha"]
     
     
     @IBAction func callbtn(_ sender: Any) {
-        if count < names.count{
+        var count = Int.random(in: 0...4)
+
             name.text = names[count]
-            count += 1
+        
+        count += 1
+        
+        number.text = String(count)
+        
+        if count == 1 || count == 2{
+            number.textColor = .red
+        }else if count == 3 || count == 4{
             
-        }else{
-            count = 0
+            number.textColor = .orange
+        }else if count == 5{
+            
+            number.textColor = .green
         }
+            
+        
         
     }
     

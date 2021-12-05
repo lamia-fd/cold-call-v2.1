@@ -22,8 +22,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73s-CZ-hx2">
-                                <rect key="frame" x="127" y="791" width="161" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHt-Ap-FqY">
+                                <rect key="frame" x="113" y="256" width="188" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="343" id="z5c-xC-VQr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="92"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73s-CZ-hx2">
+                                <rect key="frame" x="155.5" y="782.5" width="103.5" height="39.5"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -46,14 +55,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="CHt-Ap-FqY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="3hS-QN-jUx"/>
                             <constraint firstItem="j42-Ph-LW9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="M2g-3N-54t"/>
                             <constraint firstItem="j42-Ph-LW9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VYD-3R-2ey"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="73s-CZ-hx2" secondAttribute="bottom" constant="40" id="all-6I-d45"/>
+                            <constraint firstItem="CHt-Ap-FqY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pRl-xK-bkn"/>
+                            <constraint firstItem="CHt-Ap-FqY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="256" id="s2q-Ul-Hqd"/>
                             <constraint firstItem="73s-CZ-hx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uLp-Ue-jqq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="name" destination="j42-Ph-LW9" id="WEa-yo-iUh"/>
+                        <outlet property="number" destination="CHt-Ap-FqY" id="HVX-Lc-TRV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
