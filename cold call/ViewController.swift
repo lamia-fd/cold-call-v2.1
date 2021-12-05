@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var number: UILabel!
 
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func callbtn(_ sender: Any) {
         var count = Int.random(in: 0...4)
 
-            name.text = names[count]
+            nameLable.text = names[count]
         
         count += 1
         
